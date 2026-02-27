@@ -1,0 +1,22 @@
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 48px;
+    padding-block: 64px;
+    padding-inline: 16px;
+    max-width: 375px;
+    height: 1214px;
+background: #dfebeb;
+
+
+
+}
+
+
+
+
+.about {
+   
+}
