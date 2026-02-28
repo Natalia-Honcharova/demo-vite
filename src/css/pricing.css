@@ -246,7 +246,7 @@
 .pricing-plan-button {
     font-family: "Sarabun", sans-serif;
 
-    background: #C2D9FC;
+    background-color: #C2D9FC;
     color: #0D0B0A;
 
     border: 1px solid #C2D9FC;
@@ -255,11 +255,15 @@
     width: 100%;
     max-width: 295px;
 
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .pricing-plan-button:hover,
-.pricing-plan-button:focus,
-.pricing-plan-button:active {
+.pricing-plan-button:focus {
     opacity: 0.5;
+}
+
+.pricing-plan-button:active {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #C2D9FC;
 }
