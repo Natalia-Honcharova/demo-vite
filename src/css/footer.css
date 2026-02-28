@@ -57,6 +57,10 @@
   color: rgba(13, 11, 10, 0.6);
 }
 
+.footer-input:focus::placeholder {
+  opacity: 0;
+}
+
 .footer-button {
   border: 1px solid rgba(255, 255, 255, 0);
   border-radius: 100px;
@@ -67,6 +71,12 @@
   line-height: 1.6;
   color: #0d0b0a;
   margin-top: 16px;
+}
+
+.footer-button:hover,
+.footer-button:focus {
+  background: rgba(13, 11, 10, 0.05);
+  opacity: 0.5;
 }
 
 .footer-descr {
@@ -86,10 +96,7 @@
   font-size: 16px;
   line-height: 1.6;
   color: #0d0b0a;
-}
-
-.footer-links-list {
-  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .footer-links-item {
@@ -103,6 +110,41 @@
   color: #0d0b0a;
 }
 
+.footer-contacts-container {
+  margin-top: 40px;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #0d0b0a;
+}
+
+.footer-social-item {
+  padding: 9px 0;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  background: rgba(13, 11, 10, 0.05);
+  opacity: 0.5;
+}
+
+.footer-info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #0d0b0a;
+  margin-top: 48px;
+}
+
+.footer-info::before {
+  content: "\00A9";
+}
 
 @media screen and (min-width: 768px) {
   .container {
@@ -110,6 +152,8 @@
   }
 
   .footer-container {
+    display: flex;
+    flex-wrap: wrap;
     padding: 40px 32px;
   }
 
@@ -138,12 +182,34 @@
       margin-top: 0;
     }
 
-    .footer-links-container {
-      margin-top: 40px;
+    .footer-links-container,
+    .footer-contacts-container {
+      width: calc(50% - 20px);
     }
+
+    .footer-links-title {
+      margin-bottom: 16px;
+    }
+
+    .footer-contacts-container,
+    .footer-links-container {
+      margin-top: 0;
+      display: inline-block;
+      width: 300px;
+    } 
 
     .footer-links-list {
       margin-top: 16px;
+    }
+
+    .footer-wrapper {
+      display: flex;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .footer-info {
+      margin-top: 40px;
     }
 }
 
@@ -154,7 +220,6 @@
 
 .footer-container {
   display: flex;
-  gap: 250px;
   padding: 48px;
 }
 
@@ -183,6 +248,26 @@
 
  .footer-links-list {
    margin-top: 16px;
+ }
+
+ .footer-links-title {
+   margin-bottom: 16px;
+ }
+
+ .footer-contacts-container {
+   margin-top: 0;
+ }
+
+ .footer-wrapper {
+   display: flex;
+   gap: 40px;
+   width: 371px;
+   margin-top: 0;
+   margin-left: 250px;
+ }
+
+ .footer-info {
+  margin-top: 24px;
  }
 
 }
