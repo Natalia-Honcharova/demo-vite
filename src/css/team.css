@@ -1,0 +1,22 @@
+.our-team {
+    background-color: rgba(242, 250, 250, 1)
+}
+
+.content {
+ 
+}
+.text-our-team {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.team-description {
+    text-align: center;
+    margin-bottom: 48px;
+}
+.team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    align-items: center;
+}
