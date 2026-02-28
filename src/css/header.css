@@ -1,1 +1,32 @@
+/* Базовые стили для хедера */
+.header {
+  border-bottom: 1px solid #ececec;
+  /* Тонкая линия снизу, как в ТЗ */
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
 
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Лого слева, бургер/кнопка справа */
+}
+
+/* Скрываем навигацию на мобилке (до 767px включительно) */
+@media screen and (max-width: 767px) {
+  .header-nav {
+    display: none;
+  }
+}
+
+/* Стили для кнопок, чтобы они не были серыми коробками */
+.join-btn {
+  background-color: #4d5ae5;
+  /* Цвет из Figma */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+}
