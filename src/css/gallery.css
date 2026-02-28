@@ -1,0 +1,90 @@
+/* #region gallery */
+
+
+.gallery {
+    padding: 64px 20px;
+
+}
+
+.gallery-title {
+    font-family: "Cabin", sans-serif;
+
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #0d0b0a;
+    margin-bottom: 20px;
+}
+
+.gallery-desc {
+    font-family: "Sarabun", sans-serif;
+
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: #0d0b0a;
+    margin-bottom: 48px;
+}
+
+
+
+.gallery-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+
+}
+
+.gallery-item {
+    max-width: calc((100% - 24px) / 2);
+}
+
+.gallery-img {
+    border-radius: 16px;
+    width: 100%;
+
+
+
+
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .gallery {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .gallery-title {
+        margin-bottom: 24px;
+    }
+
+    .gallery-desc {
+        margin-bottom: 80px;
+    }
+
+}
+
+@media screen and (min-width: 1336px) {
+    .container {
+        max-width: 1440px;
+    }
+
+    .gallery {
+        padding-top: 112px;
+        padding-bottom: 112px;
+    }
+
+
+
+    .gallery-item {
+        flex-basis: calc((100% - 48px) / 3);
+    }
+}
+
+/* #endregion gallery */
