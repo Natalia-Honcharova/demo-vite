@@ -84,14 +84,17 @@
     justify-content: center;
     flex-direction: row;
     gap: 8px;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease, opacity 0.3s ease;
+    background: #c2d9fc;
+
 }
 
 .btn:hover,
 .btn:focus {
-    transition: background-color 0.5s ease;
-    background: #c2d9fc;
+    opacity: 0.5;
+    background-color: #c2d9fc;
 }
+
 
 /* @media min-width:375px */
 
@@ -103,6 +106,7 @@
         padding-inline: 32px;
         max-width: 768px;
         min-height: 692px;
+        background: #f2fafa;
     }
 
     .benefist-list {
@@ -123,6 +127,7 @@
     }
 
     .text-yoga {
+
         font-weight: 400;
         font-size: 16px;
         line-height: 1.6;
@@ -136,5 +141,57 @@
         width: 110px;
         white-space: nowrap;
     }
+
+}
+
+/*=== @media 1336px ===*/
+
+
+@media screen and (min-width: 1336px) {
+
+    .about-us {
+        padding-block: 112px;
+        padding-inline: 64px;
+        max-width: 1440px;
+    }
+
+    .yoga-helps {
+        font-size: 52px;
+    }
+
+
+    .text-yoga-helps {
+        font-size: 18px;
+    }
+
+
+    .benefist-list {
+        flex-wrap: nowrap;
+        max-width: 1312px;
+        align-items: flex-start;
+
+
+    }
+
+    .benefist-item {
+
+        max-width: 310px;
+
+
+    }
+
+    .heder-items {
+        font-size: 28px;
+    }
+
+    .text-yoga {
+
+        text-align: center;
+        max-width: 310px;
+
+    }
+
+
+
 
 }
