@@ -6,9 +6,8 @@
     gap: 48px;
     padding-block: 64px;
     padding-inline: 16px;
-
+    min-width: 320px;
     max-width: 375px;
-
     background: #dfebeb;
 
 }
@@ -63,14 +62,13 @@
 .text-yoga {
     font-weight: 400;
     font-size: 16px;
-
-    /* line-height: 26px; */
     line-height: 1.6;
     text-align: center;
     color: #0d0b0a;
 }
 
 .btn {
+    font-family: "Sarabun", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -93,4 +91,50 @@
 .btn:focus {
     transition: background-color 0.5s ease;
     background: #c2d9fc;
+}
+
+/* @media min-width:375px */
+
+@media screen and (min-width:768px) {
+
+    .about-us {
+        gap: 40px;
+        padding-block: 40px;
+        padding-inline: 32px;
+        max-width: 768px;
+        min-height: 692px;
+    }
+
+    .benefist-list {
+        flex-wrap: wrap;
+        gap: 24px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 704px;
+    }
+
+    .benefist-item {
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 340px;
+        gap: 16px;
+
+    }
+
+    .text-yoga {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: center;
+        color: #0d0b0a;
+    }
+
+
+
+    .btn {
+        width: 110px;
+        white-space: nowrap;
+    }
+
 }
