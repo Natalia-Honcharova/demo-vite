@@ -105,6 +105,13 @@
     box-shadow: 0 0 0 3px rgba(124, 157, 252, 0.35);
 }
 
+.btn:hover,
+.btn:focus-visible {
+    background: rgba(13, 11, 10, 0.05);
+    opacity: 0.5;
+    box-shadow: none;
+}
+
 .btn:active {
     transform: translateY(1px);
 }
