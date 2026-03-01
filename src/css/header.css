@@ -9,7 +9,6 @@
   background-color: #f2fafa;
 }
 .header-container {
-  height: 64px;
   background-color: #f2fafa;
 
   display: flex;
@@ -42,11 +41,13 @@
   height: 2px;
   background: rgba(13, 11, 10, 0.5);
   opacity: 0;
-  transition: opasity 200ms ease;
+  transform: scaleX(0);
+  transition: opacity 200ms ease, transform 200ms ease;
 }
 
 .nav-link:hover::after,
 .nav-link:focus-visible::after {
+  opacity: 1;
   transform: scaleX(1);
 }
 .join-btn:hover,
@@ -55,6 +56,7 @@
 }
 .nav-link--current::after {
   opacity: 1;
+  transform: scaleX(1);
 }
 
 .logo {
@@ -207,7 +209,6 @@
     height: 72px;
   }
   .header-container {
-    height: 72px;
     padding: 0 32px;
   }
   .join-btn--header {
@@ -222,15 +223,14 @@
     width: 100%;
     margin: 0 auto;
   }
-  .join-btn {
+  .join-btn--header {
+    height: 42px;
     padding: 8px 20px;
-    height: 46px;
-    flex-shrink: 0;
-    white-space: nowrap;
   }
   .join-btn--mobile {
     width: 204px;
     height: 46px;
+    padding: 10px 24px;
   }
 }
 
@@ -239,13 +239,16 @@
   .mobile-menu {
     display: none;
   }
+  .mobile-menu {
+    transform: translateX(-100%);
+  }
+  .mobile-menu.is-open {
+    transform: translateX(-100%);
+  }
   .header {
     height: 72px;
   }
   .header-container {
-    height: 72px;
-    display: flex;
-    align-items: center;
     padding: 0 32px;
   }
   .header-nav {
@@ -253,19 +256,18 @@
   }
     .nav-list {
       display: flex;
-      flex-direction: row;
       align-items: center;
       gap: 32px;
       list-style: none;
       margin: 0;
       padding: 0;
     }
-  .burger-btn {
-    display: none;
-  }
  .logo {
   width: 84px;
   height: 36px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
  }
  .join-btn--header {
   width: 105px;
