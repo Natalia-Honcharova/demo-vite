@@ -118,51 +118,50 @@
 /* ===== 375px ===== */
 /* ============================= */
 
-@media screen and (min-width: 375px) {
-
-    .hero__content {
-        padding: 24px 32px;
-    }
+hero__content {
+    display: flex;
+    flex-direction: c;
+    gap: 20 px;
+    /* ← як у Figma */
+    padding: 48 px 16 px;
+    /* ← як у Figma */
 }
 
 /* ============================= */
 /* ===== 768px (tablet) ===== */
 /* ============================= */
-
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
 
     .hero__content {
-        display: grid;
-        grid-template-columns: 1.25fr 1fr;
-        gap: 32px;
-        align-items: start;
-        padding: 48px 60px;
+        display: flex;
+        /* НЕ grid */
+        flex-direction: column;
+        /* вертикально */
+        gap: 8px;
+        padding: 24px 32px;
     }
 
     .hero__title {
         font-size: 48px;
-        max-width: 520px;
     }
 
     .hero__buttons {
         flex-direction: row;
     }
 
-    .hero__details {
-        padding-left: 32px;
-    }
 }
 
 /* ============================= */
 /* ===== 1336px (desktop) ===== */
 /* ============================= */
 
-@media screen and (min-width: 1336px) {
+@media (min-width: 1336px) {
 
     .hero__content {
+        display: grid;
         grid-template-columns: 1.35fr 1fr;
-        gap: 48px;
-        padding: 80px 120px;
+        gap: 24px;
+        padding: 80px 64px;
     }
 
     .hero__title {
@@ -175,7 +174,4 @@
         max-width: 560px;
     }
 
-    .hero__details {
-        padding-left: 48px;
-    }
 }
