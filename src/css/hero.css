@@ -83,17 +83,17 @@
 }
 
 .btn--primary {
-    background-color: #7c9dfc;
-    color: #ffffff;
+    background-color: #C2D9FC;
+    color: #0D0B0A;
 }
 
 .btn--primary:hover {
-    background-color: #6a8df8;
+    background-color: #C2D9FC;
 }
 
 .btn--secondary {
     background-color: #dcdcdc;
-    color: #333333;
+    color: #0D0B0A;
 }
 
 .btn--secondary:hover {
@@ -108,7 +108,7 @@
 .btn:hover,
 .btn:focus-visible {
     background: rgba(13, 11, 10, 0.05);
-    opacity: 0.5;
+    opacity: 1;
     box-shadow: none;
 }
 
