@@ -1,197 +1,139 @@
-.about-us {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 48px;
-    padding-block: 64px;
-    padding-inline: 16px;
-    min-width: 320px;
-    max-width: 375px;
-    background: #dfebeb;
-
+.container {
+    width: 100%;
+    max-width: 1336px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
-.yoga-helps {
+.about-us {
+    background: #dfebeb;
+    padding: 64px 0;
+}
+
+.about-us .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.about-title {
     font-family: "Cabin", sans-serif;
     font-weight: 400;
     font-size: 40px;
     line-height: 1.2;
-    letter-spacing: 0.01em;
     text-align: center;
     color: #0d0b0a;
 }
 
-.text-yoga-helps {
+.about-description {
     font-family: "Sarabun", sans-serif;
-    font-weight: 400;
     font-size: 15px;
     line-height: 1.6;
     text-align: center;
     color: #0d0b0a;
 }
 
-.benefist-list {
+.about-list {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
     flex-direction: column;
     gap: 48px;
 }
 
-.benefist-item {
+.about-item {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
     flex-direction: column;
     gap: 24px;
-
+    align-items: center;
 }
 
-.heder-items {
-    font-family: "Cabin",
-        sans-serif;
-    font-weight: 400;
+.about-item-title {
+    font-family: "Cabin", sans-serif;
     font-size: 24px;
     line-height: 1.4;
-    letter-spacing: 0.01em;
     text-align: center;
     color: #0d0b0a;
 }
 
-.text-yoga {
-    font-weight: 400;
+.about-item-text {
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
     color: #0d0b0a;
 }
 
-.btn {
+.btn-about-link {
     font-family: "Sarabun", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-    color: #0d0b0a;
-    border: 1px solid #c2d9fc;
+
+    padding: 10px 24px;
     border-radius: 100px;
-    padding-block: 10px;
-    padding-inline: 24px;
-    width: 343px;
-    height: 46px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 8px;
-    transition: background-color 0.5s ease, opacity 0.3s ease;
+
+    border: 1px solid #c2d9fc;
     background: #c2d9fc;
+    color: #0d0b0a;
 
+    cursor: pointer;
+    transition: opacity 0.5s ease;
 }
 
-.btn:hover,
-.btn:focus {
+.btn-about-link:hover,
+.btn-about-link:focus {
     opacity: 0.5;
-    background-color: #c2d9fc;
 }
 
-
-/* @media min-width:375px */
-
-@media screen and (min-width:768px) {
+@media (min-width: 768px) {
 
     .about-us {
-        gap: 40px;
-        padding-block: 40px;
-        padding-inline: 32px;
-        max-width: 768px;
-        min-height: 692px;
         background: #f2fafa;
+        padding: 40px 0;
     }
 
-    .benefist-list {
-        flex-wrap: wrap;
-        gap: 24px;
+    .about-us .container {
+        gap: 40px;
+    }
+
+    .about-list {
         flex-direction: row;
         flex-wrap: wrap;
-        max-width: 704px;
-    }
-
-    .benefist-item {
         justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .about-item {
         max-width: 340px;
         gap: 16px;
-
-    }
-
-    .text-yoga {
-
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.6;
-        text-align: center;
-        color: #0d0b0a;
-    }
-
-
-
-    .btn {
-        width: 110px;
-        white-space: nowrap;
     }
 
 }
 
-/*=== @media 1336px ===*/
-
-
-@media screen and (min-width: 1336px) {
+@media (min-width: 1336px) {
 
     .about-us {
-        padding-block: 112px;
-        padding-inline: 64px;
-        max-width: 1440px;
+        padding: 112px 0;
     }
 
-    .yoga-helps {
+    .about-title {
         font-size: 52px;
     }
 
-
-    .text-yoga-helps {
+    .about-description {
         font-size: 18px;
     }
 
-
-    .benefist-list {
+    .about-list {
         flex-wrap: nowrap;
-        max-width: 1312px;
         align-items: flex-start;
-
-
     }
 
-    .benefist-item {
-
-        max-width: 310px;
-
-
-    }
-
-    .heder-items {
+    .about-item-title {
         font-size: 28px;
     }
 
-    .text-yoga {
-
-        text-align: center;
-        max-width: 310px;
-
+    .about-item-text {
+        width: 310px;
     }
-
-
-
-
 }
