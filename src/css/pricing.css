@@ -106,12 +106,13 @@
         align-items: flex-start;
         flex-direction: row;
         gap: 24px;
+        flex-wrap: wrap;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1335px) {
+@media screen and (min-width: 1336px) {
     .pricing-plan-list {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
 }
 
