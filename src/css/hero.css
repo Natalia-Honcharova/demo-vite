@@ -21,12 +21,10 @@
 }
 
 .hero__content {
-    padding: 24px 16px;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    background-color: #f4f6f6;
-}
+    }
 
 .hero__title {
     margin: 0;
