@@ -124,9 +124,9 @@
 @media (min-width: 1336px) {
 
     .hero img {
-        max-width: 1440px;
-        margin: 0 auto;
-        object-position: center;
+        width: 100%;
+        max-width: none;
+        margin: 0;
     }
 
     .hero__content {
