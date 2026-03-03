@@ -1,139 +1,136 @@
 .container {
-    width: 100%;
-    max-width: 1336px;
-    margin: 0 auto;
-    padding-left: 16px;
-    padding-right: 16px;
+  width: 100%;
+  max-width: 1336px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .about-us {
-    background: #dfebeb;
-    padding: 64px 0;
+  background: #dfebeb;
+  padding: 64px 0;
 }
 
 .about-us .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
 }
 
 .about-title {
-    font-family: "Cabin", sans-serif;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 1.2;
-    text-align: center;
-    color: #0d0b0a;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  text-align: center;
+  color: #0d0b0a;
 }
 
 .about-description {
-    font-family: "Sarabun", sans-serif;
-    font-size: 15px;
-    line-height: 1.6;
-    text-align: center;
-    color: #0d0b0a;
+  font-family: 'Sarabun', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: center;
+  color: #0d0b0a;
 }
 
 .about-list {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
 .about-item {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
 }
 
 .about-item-title {
-    font-family: "Cabin", sans-serif;
-    font-size: 24px;
-    line-height: 1.4;
-    text-align: center;
-    color: #0d0b0a;
+  font-family: 'Cabin', sans-serif;
+  font-size: 24px;
+  line-height: 1.4;
+  text-align: center;
+  color: #0d0b0a;
 }
 
 .about-item-text {
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: center;
-    color: #0d0b0a;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: #0d0b0a;
 }
 
 .btn-about-link {
-    font-family: "Sarabun", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
 
-    padding: 10px 24px;
-    border-radius: 100px;
+  padding: 10px 24px;
+  border-radius: 100px;
 
-    border: 1px solid #c2d9fc;
-    background: #c2d9fc;
-    color: #0d0b0a;
+  border: 1px solid #c2d9fc;
+  background: #c2d9fc;
+  color: #0d0b0a;
 
-    cursor: pointer;
-    transition: opacity 0.5s ease;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
 }
 
 .btn-about-link:hover,
 .btn-about-link:focus {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 @media (min-width: 768px) {
+  .about-us {
+    background: #f2fafa;
+    padding: 40px 0;
+  }
 
-    .about-us {
-        background: #f2fafa;
-        padding: 40px 0;
-    }
+  .about-us .container {
+    gap: 40px;
+  }
 
-    .about-us .container {
-        gap: 40px;
-    }
+  .about-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
 
-    .about-list {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 24px;
-    }
-
-    .about-item {
-        max-width: 340px;
-        gap: 16px;
-    }
-
+  .about-item {
+    max-width: 340px;
+    gap: 16px;
+  }
 }
 
 @media (min-width: 1336px) {
+  .about-us {
+    padding: 112px 0;
+  }
 
-    .about-us {
-        padding: 112px 0;
-    }
+  .about-title {
+    font-size: 52px;
+  }
 
-    .about-title {
-        font-size: 52px;
-    }
+  .about-description {
+    font-size: 18px;
+  }
 
-    .about-description {
-        font-size: 18px;
-    }
+  .about-list {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
 
-    .about-list {
-        flex-wrap: nowrap;
-        align-items: flex-start;
-    }
+  .about-item-title {
+    font-size: 28px;
+  }
 
-    .about-item-title {
-        font-size: 28px;
-    }
-
-    .about-item-text {
-        width: 310px;
-    }
+  .about-item-text {
+    width: 310px;
+  }
 }
