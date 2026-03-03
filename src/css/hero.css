@@ -5,14 +5,15 @@
 .hero {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    /* ← ось сюди */
 }
 
 /* Картинка */
 .hero img {
     width: 100%;
-    height: auto;
     max-width: 1440px;
-    margin: 0 auto;
+    height: auto;
     display: block;
 }
 
@@ -62,17 +63,51 @@
     align-items: center;
     justify-content: center;
     min-height: 46px;
-    padding: 0 24px;
-    border-radius: 999px;
-    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 100px;
+    border: 1px solid transparent;
     font-size: 14px;
     font-weight: 500;
-    transition: 0.2s ease;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
+/* PRIMARY */
 .btn--primary {
     background-color: #C2D9FC;
     color: #0D0B0A;
+    border-color: #C2D9FC;
+}
+
+.btn--primary:hover {
+    background-color: #AFC8F8;
+}
+
+.btn--primary:active {
+    background-color: #9FBDF5;
+    transform: translateY(1px);
+}
+
+/* SECONDARY */
+.btn--secondary {
+    background: rgba(13, 11, 10, 0.05);
+    color: #0D0B0A;
+}
+
+.btn--secondary:hover {
+    background: rgba(13, 11, 10, 0.1);
+}
+
+.btn--secondary:active {
+    background: rgba(13, 11, 10, 0.15);
+}
+
+/* DISABLED */
+.btn:disabled,
+.btn[aria-disabled="true"] {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default;
 }
 
 .btn--secondary {
@@ -80,14 +115,13 @@
     /* по макету */
     color: #0D0B0A;
 }
-.btn--primary:hover {
-    background-color: #C2D9FC;
-    opacity: 0.5;
-}
 
 .btn--secondary:hover {
-    background: rgba(13, 11, 10, 0.05);
-    opacity: 0.5;
+    background: rgba(13, 11, 10, 0.1);
+}
+
+.btn--secondary:active {
+    background: rgba(13, 11, 10, 0.15);
 }
 
 /* ============================= */
@@ -105,12 +139,9 @@
         max-width: 704px;
     }
 
-    .hero__text {
-        max-width: 704px;
-        margin-bottom: 32px;
-        /* по макету */
-    }
-
+  .hero__text {
+      margin-bottom: 32px;
+  }
     .hero__buttons {
         flex-direction: row;
         gap: 16px;
@@ -125,8 +156,9 @@
 
     .hero img {
         width: 100%;
-        max-width: none;
-        margin: 0;
+        max-width: 1440px;
+        margin: 0 auto;
+        object-position: center;
     }
 
     .hero__content {
@@ -142,10 +174,8 @@
         margin-bottom: 0;
     }
 
-    .hero__text {
-        font-size: 18px;
-        max-width: none;
-        margin-bottom: 16px;
-    }
+   .hero__text {
+       margin-bottom: 16px;
+   }
 
 }
