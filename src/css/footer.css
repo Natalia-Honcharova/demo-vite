@@ -80,6 +80,10 @@
   opacity: 0.5;
 }
 
+.footer-button:active {
+  border: 1px solid #868584;
+}
+
 .footer-descr {
   font-weight: 400;
   font-size: 12px;
@@ -135,6 +139,10 @@
   opacity: 0.5;
 }
 
+.social-icon:active {
+  opacity: 0.3;
+}
+
 .footer-info {
   font-weight: 400;
   font-size: 14px;
@@ -150,6 +158,11 @@
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding: 0 32px;
+  }
+
+  .hero-footer {
+    padding: 40px 0;
   }
 
   .footer-container {
@@ -223,6 +236,11 @@
 @media screen and (min-width: 1336px) {
   .container {
     max-width: 1336px;
+    padding: 0 12px;
+  }
+
+  .hero-footer {
+    padding: 64px 0;
   }
 
   .footer-container {
