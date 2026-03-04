@@ -1,12 +1,11 @@
 .testimonials {
   background-color: #f2fafa;
+  max-width: 375px;
+    padding: 64px 0;
+    margin: 0 auto;
 }
 
-/* .container{
-max-width: 375px;
-padding: 64px 16px;
-margin: 0 auto;
-} */
+
 
 h2,
 p {
@@ -42,6 +41,7 @@ p {
   font-size: 22px;
   text-align: center;
   line-height: 1.6;
+  min-width: 343px;
 }
 
 .reviewer-name {
@@ -58,10 +58,10 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  /* .container{
+  .testimonials{
     max-width: 768px;
     padding: 40px 32px;
-} */
+}
 
   .testimonials-title-style {
     font-size: 40px;
@@ -71,10 +71,10 @@ p {
   }
 }
 @media screen and (min-width: 1336px) {
-  /* .container {
+  .testimonials {
         max-width: 1336px;
         padding: 112px 64px;
-    } */
+    }
 
   .testimonials-description {
     gap: 24px;
