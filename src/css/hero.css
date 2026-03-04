@@ -179,14 +179,14 @@
 
     .hero__title {
         font-size: 72px;
-        max-width: none;
+        max-width: 644px;
         margin-bottom: 0;
     }
 
     .hero__text {
         font-size: 18px;
-        max-width: none;
-        margin-bottom: 16px;
+        max-width: 644px;
+        margin-bottom: 32px;
     }
 
 }
