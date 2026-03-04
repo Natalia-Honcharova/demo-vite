@@ -184,7 +184,7 @@
 
 .mobile-nav {
   flex: 1;
-  padding-top: 28px;
+  padding-top: 16px;
 }
 
 .mobile-nav-list {
@@ -192,9 +192,9 @@
   margin: 0;
   padding: 0;
 
-  display: flex;
+  display: block;
   flex-direction: column;
-  gap: 12px;
+  gap: 0;
 }
 
 .mobile-nav-link {
@@ -205,7 +205,7 @@
   font-size: 16px;
   line-height: 1.6;
   color: #0d0b0a;
-
+  padding: 0 12px;
   text-decoration: none;
 }
 .join-btn--mobile {
@@ -213,6 +213,7 @@
   height: 46px;
   padding: 10px 24px;
   margin-top: auto;
+  margin-bottom: 24px;
 }
 
 
@@ -251,7 +252,7 @@
     height: 72px;
   }
   .header-container {
-    padding: 0 32px;
+    padding: 0 12px;
     display: flex;
   }
   .header-nav {
