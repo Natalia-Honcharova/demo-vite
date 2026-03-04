@@ -49,7 +49,10 @@
      
     
  }
-
+ .team-item
+{    width: 100%;
+    max-width: 354px;}
+    
  .team-list {
      display: flex;
      flex-wrap: wrap;
