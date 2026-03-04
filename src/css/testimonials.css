@@ -1,12 +1,11 @@
 .testimonials {
   background-color: #f2fafa;
+  max-width: 375px;
+    padding: 64px 0;
+    margin: 0 auto;
 }
 
-.container{
-max-width: 375px;
-padding: 64px 16px;
-margin: 0 auto;
-}
+
 
 h2,
 p {
@@ -59,7 +58,7 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .container{
+  .testimonials{
     max-width: 768px;
     padding: 40px 32px;
 }
@@ -72,7 +71,7 @@ p {
   }
 }
 @media screen and (min-width: 1336px) {
-  .container {
+  .testimonials {
         max-width: 1336px;
         padding: 112px 64px;
     }
