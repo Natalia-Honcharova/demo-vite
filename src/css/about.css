@@ -1,10 +1,3 @@
-.container {
-    width: 100%;
-    max-width: 1336px;
-    margin: 0 auto;
-    padding-left: 16px;
-    padding-right: 16px;
-}
 
 .about-us {
     background: #dfebeb;
@@ -110,7 +103,8 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 46.5px;
+        row-gap: 46.5px;
+        column-gap: 24px;
         margin-bottom: 62.5px;
     }
 
@@ -132,6 +126,7 @@
     }
 
     .about-item {
+        max-width: 310px;
         gap: 24px;
     }
 
