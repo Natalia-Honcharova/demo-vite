@@ -63,7 +63,7 @@
 
 
  .team-card {
-     background-color: #F7FCFB;
+     background-color: #f2fafa;
      border-radius: 12px;
      overflow: hidden;
      height: 100%;
@@ -150,15 +150,17 @@
      }
 
      .team-list {
-         flex-direction: row;
-         flex-wrap: wrap;
-         justify-content: center;
-         gap: 32px 16px;
+    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px 16px;
      }
 
      .team-item {
-         width: 354px;
-         /* Ширина для планшета */
+        width: calc((100% - 16px) / 2);
+            max-width: 354px;
+     
      }
 
    
