@@ -166,12 +166,12 @@
      .team-item {
         width: calc((100% - 16px) / 2);
             max-width: 354px;
+            display: flex;
      
      }
          .team-photo {
-             
-             height: 390px;
-             width: 100%;
+             width: 340px;
+             height: 395px;
              
              object-fit: cover;
              
