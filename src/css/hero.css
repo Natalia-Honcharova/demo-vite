@@ -1,63 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400&family=Sarabun:wght@400&display=swap');
-
 /* ============================= */
-/* ===== HERO BASE 320px+ ===== */
+/* ===== HERO BASE (Mobile 320+) */
 /* ============================= */
 
 .hero {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    /* ← ось сюди */
 }
 
-/* Робимо hero більш “банерним” */
-.hero__image {
-    overflow: hidden;
-}
-
-.hero__image img {
+/* Картинка */
+.hero img {
     width: 100%;
+    max-width: 1440px;
     height: auto;
     display: block;
 }
 
+/* Контент */
 .hero__content {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    }
+    padding: 48px 0px;
+    /* 48 top/bottom, 16 sides */
+}
 
+/* Заголовок */
 .hero__title {
-    margin: 0;
+    margin: 0 0 20px 0;
+    /* 20 до тексту */
     font-family: 'Cabin', sans-serif;
     font-weight: 400;
     font-size: 44px;
     line-height: 1.2;
-    letter-spacing: 0.01em;
-    color: #0d0b0a;
-    max-width: 343px;
+    color: #0D0B0A;
 }
 
+/* Текст */
 .hero__text {
-    margin: 0;
+    margin: 0 0 24px 0;
+    /* 24 до кнопок */
     font-family: 'Sarabun', sans-serif;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
-    color: #0d0b0a;
-    max-width: 343px;
+    color: #0D0B0A;
 }
 
-.hero__details {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
+/* Кнопки */
 .hero__buttons {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    margin-top: 8px;
+    gap: 16px;
+    /* між кнопками */
 }
 
 /* ============================= */
@@ -69,113 +63,130 @@
     align-items: center;
     justify-content: center;
     min-height: 46px;
-    padding: 0 24px;
+    padding: 10px 24px;
+    border-radius: 100px;
     border: 1px solid transparent;
-    border-radius: 999px;
-    text-decoration: none;
     font-size: 14px;
-    line-height: 1;
     font-weight: 500;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
+/* PRIMARY */
 .btn--primary {
     background-color: #C2D9FC;
     color: #0D0B0A;
+    border-color: #C2D9FC;
 }
 
 .btn--primary:hover {
-    background-color: #C2D9FC;
+    background-color: #AFC8F8;
 }
 
+.btn--primary:active {
+    background-color: #9FBDF5;
+    transform: translateY(1px);
+}
+
+/* SECONDARY */
 .btn--secondary {
-    background-color: #dcdcdc;
+    background: rgba(13, 11, 10, 0.05);
     color: #0D0B0A;
 }
 
 .btn--secondary:hover {
-    background-color: #cfcfcf;
+    background: rgba(13, 11, 10, 0.1);
 }
 
-.btn:focus-visible {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(124, 157, 252, 0.35);
+.btn--secondary:active {
+    background: rgba(13, 11, 10, 0.15);
 }
 
-.btn:hover,
-.btn:focus-visible {
+/* DISABLED */
+.btn:disabled,
+.btn[aria-disabled="true"] {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default;
+}
+
+.btn--secondary {
     background: rgba(13, 11, 10, 0.05);
-    opacity: 1;
-    box-shadow: none;
+    /* по макету */
+    color: #0D0B0A;
 }
 
-.btn:active {
-    transform: translateY(1px);
+.btn--secondary:hover {
+    background: rgba(13, 11, 10, 0.1);
+}
+
+.btn--secondary:active {
+    background: rgba(13, 11, 10, 0.15);
 }
 
 /* ============================= */
-/* ===== 375px ===== */
+/* ===== TABLET 768 ===== */
 /* ============================= */
 
-@media screen and (min-width: 375px) {
+@media (min-width: 768px) {
 
-    .hero__content {
-        padding: 24px 32px;
+    .hero .container {
+        padding: 0 32px;
     }
-}
-
-/* ============================= */
-/* ===== 768px (tablet) ===== */
-/* ============================= */
-
-@media screen and (min-width: 768px) {
 
     .hero__content {
-        display: grid;
-        grid-template-columns: 1.25fr 1fr;
-        gap: 32px;
-        align-items: start;
-        padding: 48px 60px;
+        padding: 24px 0px;
     }
 
     .hero__title {
         font-size: 48px;
-        max-width: 520px;
+        max-width: 704px;
+        margin: 0 0 8px;
     }
 
+  .hero__text {
+      margin-bottom: 32px;
+  }
     .hero__buttons {
         flex-direction: row;
-    }
-
-    .hero__details {
-        padding-left: 32px;
+        gap: 16px;
     }
 }
 
 /* ============================= */
-/* ===== 1336px (desktop) ===== */
+/* ===== DESKTOP 1336 ===== */
 /* ============================= */
 
-@media screen and (min-width: 1336px) {
+@media (min-width: 1336px) {
+
+    .hero .container {
+        padding: 0 12px;
+    }
+
+    .hero img {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        object-position: center;
+    }
 
     .hero__content {
+        display: grid;
         grid-template-columns: 1.35fr 1fr;
-        gap: 48px;
-        padding: 80px 120px;
+        padding: 80px 0px;
+        gap: 24px;
     }
 
     .hero__title {
         font-size: 72px;
-        max-width: 644px;
+        max-width: none;
+        margin-bottom: 0;
     }
 
     .hero__text {
         font-size: 18px;
-        max-width: 560px;
+        max-width: none;
+        margin-bottom: 16px;
     }
 
-    .hero__details {
-        padding-left: 48px;
-    }
 }

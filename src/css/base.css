@@ -17,7 +17,7 @@
   font-weight: 400;
 
   color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  background-color: hsla(0, 0%, 100%, 0.87);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -32,11 +32,14 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+  background-color: #f2fafa;
+  overflow-x: hidden;
 }
 
 main {
   flex-grow: 1;
 }
+
 main:has(.back-link) {
   text-align: center;
 }

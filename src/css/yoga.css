@@ -1,16 +1,15 @@
 .yoga-classes {
   padding-bottom: 64px;
-  overflow-x: hidden;
+  padding-top: 64px;
 }
 
 .container-title {
-  padding-top: 64px;
   max-width: 343px;
-  margin-bottom: 48px;
+  margin: 0 auto;
 }
 
 .images-yoga {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .yoga-paragraf {
@@ -35,10 +34,20 @@
   max-width: 343px;
 }
 
+.yoga-title-tab {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #0d0b0a;
+  display: none;
+}
+
 .description {
   font-family: 'Sarabun', sans-serif;
   font-weight: 400;
-  font-size: 16px;
   line-height: 1.6;
   text-align: center;
   color: #0d0b0a;
@@ -51,6 +60,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 48px;
+  margin-top: 48px;
 }
 
 .box-img-text {
@@ -92,6 +102,7 @@
   justify-content: center;
   opacity: 1;
   cursor: pointer;
+  margin: 0 auto;
 }
 
 .box-link-join:hover {
@@ -109,11 +120,11 @@
 @media only screen and (min-width: 768px) {
   .yoga-classes {
     padding-bottom: 40px;
+    padding-top: 40px;
   }
 
   .container-title {
     max-width: 704px;
-    margin-bottom: 40px;
   }
 
   .description {
@@ -128,6 +139,13 @@
     max-width: 704px;
     margin-bottom: 24px;
     font-size: 38px;
+    display: none;
+  }
+
+  .yoga-title-tab {
+    display: block;
+    margin-bottom: 24px;
+    justify-content: center;
   }
 
   .destruction {
@@ -146,7 +164,8 @@
   .list {
     max-width: 704px;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px 24px;
+    gap: 27px 24px;
+    margin-top: 40px;
   }
 
   .images-yoga {
@@ -175,13 +194,23 @@
 }
 
 @media only screen and (min-width: 1336px) {
+  .yoga-classes {
+    padding-bottom: 112px;
+    padding-top: 112px;
+  }
+
   .container-title {
     max-width: 768px;
-    margin: 0 auto;
   }
 
   .yoga-title {
-    font-size: 51px;
+    max-width: 768px;
+    font-size: 52px;
+    display: block;
+  }
+
+  .yoga-title-tab {
+    display: none;
   }
 
   .title-text {
@@ -196,7 +225,6 @@
     max-width: 1312px;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
-    margin-top: 40px;
   }
 
   .box-tab {
