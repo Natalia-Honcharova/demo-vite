@@ -1,0 +1,246 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+   padding: 0;
+}
+
+
+.container {
+    background-color: #F7FCFB;
+    padding: 64px 0;
+    width: 100%;
+}
+
+
+.content {
+    max-width: 100%;
+    padding:16px;
+    margin: 0 auto;
+  text-align: center;
+display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+}
+.content-wrapper {
+align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 343px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.subtitle {
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #0D0B0A;
+    font-style: semi-bold;
+    margin-bottom: 4px;
+
+}
+
+.text-our-team {
+    text-align: center;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 120%;
+        letter-spacing: 0%;
+        color: #0D0B0A;
+        border: 16px;
+        padding: 0px;
+        margin: 0;
+}
+
+.team-description {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    color: #0D0B0A;
+    border: 16px;
+    padding: 0px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+.team-list {
+  display: flex;
+flex-wrap: wrap;
+ flex-direction: column;
+ align-items: center;
+ gap: 20px;
+ list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.team-item {
+    width: 343px;
+
+}
+
+.team-card {
+    background-color: #F7FCFB;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+   display: flex;
+ flex-direction: column;
+}
+.team-photo {
+display: block;
+ width: 100%;
+   height: auto;
+object-fit: cover;
+}
+
+.team-card-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+
+
+}
+.team-name-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+.team-name {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+
+    margin: 0;
+}
+.team-name {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+
+    margin: 0;
+}
+
+.team-position {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(13, 11, 10, 1);
+    margin-bottom: 12px;
+    line-height: 160%;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+
+.team-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 24px 0;
+    flex-grow: 1;
+}
+
+.team-social-list {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.team-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 768px) {
+ .container {
+        padding: 80px 0;
+    }
+ .content-wrapper {
+            max-width: 720px;
+    
+        }
+ .team-section {
+                    padding: 80px 0;
+                }
+
+.team-description {
+        max-width: 100%;
+        /* Текст Our Team в одну строку */
+    }
+
+ .team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px 16px;
+        /* 32px между рядами, 16px между колонками */
+    }
+
+.team-item {
+        width: 354px;
+        /* Ширина для планшета */
+    }
+.team-title {
+  font-size: 52px;
+   line-height: 120%;
+   letter-spacing: 1%;
+  font: Cabin;
+   weight: 400;
+        
+                 }
+.team-text {
+             font-size: 16px;
+             line-height: 160%;
+             letter-spacing: 0%;
+             color: #0D0B0A;
+             font-style: regular;
+             font-weight: 400;
+         }
+
+ .text-our-team {
+        font-size: 40px;
+    }
+}
+
+
+@media screen and (min-width: 1158px) {
+    .container {
+        padding: 100px 0;
+    }
+
+    .team-list {
+        gap: 24px;
+    }
+
+    .team-item {
+        /* Расчет ширины для 3-х колонок с учетом отступов */
+        width: calc((100% - 48px) / 3);
+        max-width: 360px;
+    }
+
+    .text-our-team {
+        font-size: 52px;
+    }
+}
