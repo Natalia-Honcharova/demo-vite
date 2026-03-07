@@ -2,8 +2,13 @@
 
 
 .gallery {
-    padding: 64px 20px;
+    padding: 64px 0px;
 
+}
+
+.gallery .container {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .gallery-title {
@@ -51,13 +56,16 @@
 }
 
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
+
 
     .gallery {
         padding-top: 40px;
         padding-bottom: 40px;
+    }
+
+    .gallery .container {
+        padding-left: 32px;
+        padding-right: 32px;
     }
 
     .gallery-title {
@@ -83,13 +91,16 @@
 }
 
 @media screen and (min-width: 1336px) {
-    .container {
-        max-width: 1440px;
-    }
+
 
     .gallery {
         padding-top: 112px;
         padding-bottom: 112px;
+    }
+
+    .gallery .container {
+        padding-left: 12px;
+        padding-right: 12px;
     }
 
     .gallery-desc {
