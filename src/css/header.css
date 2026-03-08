@@ -216,9 +216,9 @@
   margin-bottom: 24px;
 }
 /*---modal--*/
-section.modal-background {
+/* section.modal-background {
   display: none;
-}
+} */
 
 
 @media screen and (min-width: 768px) {
